@@ -1,6 +1,14 @@
-function sum() {
+function sum(a) {
   // ?? 
-}
+  if(a===undefined) return 0
+  let num=a;
+    return function adder(b){
+        if(b===undefined){
+            return num;
+        }
+        num+=b;
+        return adder;
+    }
 /**
  * Assignment: Define sum function above such that following operations work
  */
